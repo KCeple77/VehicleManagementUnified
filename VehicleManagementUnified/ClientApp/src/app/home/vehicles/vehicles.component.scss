@@ -52,6 +52,11 @@
     align-items: center;
   }
 
+  .vehicles-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
   .vehicle-item {
     display: flex;
     justify-content: space-between;

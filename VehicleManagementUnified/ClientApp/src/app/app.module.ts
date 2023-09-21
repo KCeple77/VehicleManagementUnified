@@ -24,6 +24,7 @@ import { LocationsComponent } from './home/locations/locations.component';
 import { MapComponent } from './home/map/map.component';
 import { VehiclesComponent } from './home/vehicles/vehicles.component';
 import { DriversComponent } from './home/drivers/drivers.component';
+import { SidebarModule } from 'primeng/sidebar';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { DriversComponent } from './home/drivers/drivers.component';
     DropdownModule,
     BrowserAnimationsModule,
     DialogModule,
+    SidebarModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full', canActivate: [AuthorizeGuard], runGuardsAndResolvers: 'always'},
     ], { onSameUrlNavigation: 'reload' })

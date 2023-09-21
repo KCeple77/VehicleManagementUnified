@@ -43,7 +43,7 @@
         <span class="pi pi-search search-icon"></span>
         <input type="text" pInputText placeholder="Search" (keyup)="onSearch($event)">
       </div>
-      <p-dataView [value]="filteredLocations">
+      <p-dataView [value]="filteredLocations" class="locations-dataView">
         <ng-template let-location pTemplate="listItem">
           <div class="location-item">
             <div class="location-info">

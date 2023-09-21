@@ -4,8 +4,17 @@
 }
 
 #arcgisMapViewContainer {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 75%;
+  position: absolute;
+  height: 100vh; /* Adjust as needed */
+  width: 100vw; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.left-container {
+  height: 100%; 
+  width: 100%;
+}
+
+.sidebar {
+  width: 25%;
 }

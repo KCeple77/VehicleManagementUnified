@@ -15,7 +15,7 @@ import MapView from '@arcgis/core/views/MapView';
 })
 export class MapComponent {
 
-  view!: MapView;
+  mapView!: MapView;
 
   constructor(
     private locationService: LocationService
@@ -30,7 +30,7 @@ export class MapComponent {
         basemap: 'topo-vector'
     });
 
-    this.view = new MapView({
+    this.mapView = new MapView({
         container: 'arcgisMapView',
         map: map,
         center: [17.815399, 42.266568],
@@ -63,6 +63,6 @@ export class MapComponent {
       symbol: markerSymbol
     });
 
-    this.view.graphics.add(pointGraphic);
+    this.mapView.graphics.add(pointGraphic);
   }
 }

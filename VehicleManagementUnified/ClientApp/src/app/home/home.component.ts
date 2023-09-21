@@ -19,6 +19,8 @@ export class HomeComponent implements OnInit {
 
   @ViewChild('arcgisMapViewContainer') mapComponent!: MapComponent;
 
+  sidebarVisible = false;
+
   constructor(
     public tokenService: TokenService,
     public authService: AuthorizeService,
@@ -40,5 +42,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.tokenService.refreshToken();
+  }
+
+  toggleSidebar() {
+    this.sidebarVisible = !this.sidebarVisible;
   }
 }
